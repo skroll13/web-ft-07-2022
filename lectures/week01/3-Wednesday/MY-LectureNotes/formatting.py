@@ -1,15 +1,23 @@
 
 # Create a variable called first_name and set the value to your first name
+first_name = "Shannon"
 
 # create a variable called last_name and set the value to your last name
 
+last_name = "Kroll"
+
 # print your first name console
 
+print(first_name)
+
 # print your last name to the console
+print(last_name)
 
 # Create a new varaiable called my_name and set the value to the concatenation of your first name and your last name 
+my_name = f{first_name} + " " + {last_name}
 
 # print "My name is ???" out to the console.  Substitue the ??? with the my_name variable.
+print("My name is my_name")
 
 # create a variable called company_name and set the value to "DigitalCrafts"
 
