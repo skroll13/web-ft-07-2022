@@ -174,11 +174,11 @@
 #  *****
 # *******
 # ```
-triangle_rows = int(input("amount of rows in triangle?"))
-for star in range(1, triangle_rows + 1):
-    amount_space = triangle_rows-star
-    amount_star = 2*star-1
-    print((" "*amount_space)+("*"*amount_star))
+# triangle_rows = int(input("amount of rows in triangle?"))
+# for star in range(1, triangle_rows + 1):
+#     amount_space = triangle_rows-star
+#     amount_star = 2*star-1
+#     print((" "*amount_space)+("*"*amount_star))
 
 # #### 6. Multiplication Table
 
@@ -199,6 +199,17 @@ for star in range(1, triangle_rows + 1):
 # 10 X 9 = 90
 # 10 X 10 = 100
 # ```
+
+num1 = 1
+num2 = 1
+
+while num1 <= 10:
+    while num2 <= 10:
+        print(f"{num1} * {num2} = {num1*num2}")
+        num2+=1
+    
+    num2=1
+    num1+=1
 
 # ## Submit Homework
 # - Create an issue
