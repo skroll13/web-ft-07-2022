@@ -17,22 +17,22 @@
 # - fair -> 15%
 # - bad -> 10%
 
-# good_service = 0.2
-# fair_service = 0.15
-# bad_service = 0.1
+good_service = 0.2
+fair_service = 0.15
+bad_service = 0.1
 
-# total_bill = float(input('enter bill total >>'))
-# level_of_service = input('enter good, fair, or bad >>')
+total_bill = float(input('enter bill total >>'))
+level_of_service = input('enter good, fair, or bad >>')
 
-# if level_of_service == "good":
-#     tip = total_bill*good_service
-# elif level_of_service == "fair":
-#     tip = total_bill*fair_service
-# else: 
-#     tip = total_bill*bad_service
+if level_of_service == "good":
+    tip = total_bill*good_service
+elif level_of_service == "fair":
+    tip = total_bill*fair_service
+else: 
+    tip = total_bill*bad_service
 
-# print(f"Tip is ${tip}0")
-# print(f"Your total bill is ${total_bill+tip}0")
+print(f"Tip is %.2f" % tip)
+print(f"Your total bill is %.2f" total_bill+tip)
 
 
             
