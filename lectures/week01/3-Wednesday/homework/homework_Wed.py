@@ -17,22 +17,22 @@
 # - fair -> 15%
 # - bad -> 10%
 
-good_service = 0.2
-fair_service = 0.15
-bad_service = 0.1
+# good_service = 0.2
+# fair_service = 0.15
+# bad_service = 0.1
 
-total_bill = float(input('enter bill total >>'))
-level_of_service = input('enter good, fair, or bad >>')
+# total_bill = float(input('enter bill total >>'))
+# level_of_service = input('enter good, fair, or bad >>')
 
-if level_of_service == "good":
-    tip = total_bill*good_service
-elif level_of_service == "fair":
-    tip = total_bill*fair_service
-else: 
-    tip = total_bill*bad_service
+# if level_of_service == "good":
+#     tip = total_bill*good_service
+# elif level_of_service == "fair":
+#     tip = total_bill*fair_service
+# else: 
+#     tip = total_bill*bad_service
 
-print(f"Tip is %.2f" % tip)
-print(f"Your total bill is %.2f" total_bill+tip)
+# print(f"Tip is %.2f" % tip)
+# print(f"Your total bill is %.2f" total_bill+tip)
 
 
             
@@ -137,16 +137,30 @@ print(f"Your total bill is %.2f" total_bill+tip)
 # ******
 # ```
 
-width = int(input('How many digits wide is the box?  '))
-height = int(input('How many digits tall is the box?  '))
-for y in range(height):
-    row_stars = "" 
-    for x in range(width):
-        if (x == 0 or y == 0 or y == height -1) or x == width - 1:
-            row_stars = row_stars + "*"
-        else:
-            row_stars = row_stars + " "
-    print(row_stars)
+# width = input("width?")
+# width = int(width)
+
+# height = input("height?")
+# height = int(height)
+
+# print = ("*"*width)
+
+# while (height > 0):
+#     print("*"+" "*(width-2) + "*")
+#     height -=1
+# print("*"*width)    
+
+
+# width = int(input('How many digits wide is the box?  '))
+# height = int(input('How many digits tall is the box?  '))
+# for y in range(height):
+#     row_stars = "" 
+#     for x in range(width):
+#         if (x == 0 or y == 0 or y == height -1) or x == width - 1:
+#             row_stars = row_stars + "*"
+#         else:
+#             row_stars = row_stars + " "
+#     print(row_stars)
 
 
 
@@ -160,6 +174,11 @@ for y in range(height):
 #  *****
 # *******
 # ```
+triangle_rows = int(input("amount of rows in triangle?"))
+for star in range(1, triangle_rows + 1):
+    amount_space = triangle_rows-star
+    amount_star = 2*star-1
+    print((" "*amount_space)+("*"*amount_star))
 
 # #### 6. Multiplication Table
 
