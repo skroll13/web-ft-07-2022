@@ -145,8 +145,8 @@
 
 # print = ("*"*width)
 
-# while (height > 0):
-#     print("*"+" "*(width-2) + "*")
+# while (height-2 > 0):
+#     print("*" + " " * (width-2) + "*")
 #     height -=1
 # print("*"*width)    
 
@@ -200,16 +200,35 @@
 # 10 X 10 = 100
 # ```
 
-num1 = 1
-num2 = 1
+# num1 = 1
+# num2 = 1
 
-while num1 <= 10:
-    while num2 <= 10:
-        print(f"{num1} * {num2} = {num1*num2}")
-        num2+=1
+# while num1 <= 10:
+#     while num2 <= 10:
+#         print(f"{num1} * {num2} = {num1*num2}")
+#         num2+=1
     
-    num2=1
-    num1+=1
+#     num2=1
+#     num1+=1
+
+
+# Days of the Week Homework
+
+# weeks = ['Week 1','Week 2','Week 3','Week 4','Week 5','Week 6','Week 7','Week 8','Week 9','Week 10']
+
+# days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+
+# weeks = ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5','Week 6', 'Week 7', 'Week 8', 'Week 9', 'Week 10']
+# days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+# num1 = 0
+# num2 = 0
+# while num1 < len(weeks):
+#     print(f'{weeks[num1]}:')
+#     while num2 < len(days):
+#         print(f'{days[num2]}')
+#         num2+= 1
+#     num2 = 0
+#     num1+=1
 
 # ## Submit Homework
 # - Create an issue
