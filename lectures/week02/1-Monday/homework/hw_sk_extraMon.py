@@ -87,3 +87,50 @@
 # # matrix = matrix_mult([[1, 2],[3, 4]], [[5, 6],[7, 8]])
 
 # # print(matrix)
+
+# from Thomas's code
+
+def todo_list
+    while True:
+        
+        count = 1
+        for todo in todos:
+            print("%d. %s" % (count, todo))
+            count += 1
+            
+        response = input(f"""Choose an action:
+                        
+    P: Print your to-do list
+    A: Add a to-do item
+    R: Replace a to-do item
+    D: Delete a to-do item
+
+    >> """)
+        if response.lower() == 'p':
+            
+            count = 1
+            for todo in todos:
+                print("%d. %s" % (count, todo))
+                count += 1
+                
+        elif response.lower() == 'a':
+            your_response = input(f"What would you like to add? >> ")
+            todos.append(your_response)
+            
+        elif response.lower() == 'r':
+            your_response = int(input(f"Which item would you like to replace? >> "))
+            your_replacement = input(f"What are you replacing '{your_response}' with? >> ")
+            todos[your_response - 1] = your_replacement
+        
+        elif response.lower() == 'd':
+            your_response = int(input(f"Which item would you like to delete? >> "))
+            del todos[your_response - 1]
+            
+        elif response == '':
+            print("Goodbye.")
+            break
+        
+        else:
+            print(f"""
+                '{response}' is not a valid entry, please try again.
+                """)
