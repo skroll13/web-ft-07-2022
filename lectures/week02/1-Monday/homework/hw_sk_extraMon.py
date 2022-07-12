@@ -90,47 +90,45 @@
 
 # from Thomas's code
 
-def todo_list
-    while True:
+def todo_list():
+    count = 1
+    for todo in todos:
+        print("%d. %s" % (count, todo))
+        count += 1
+        
+    response = input(f"""Choose an action:
+                    
+P: Print your to-do list
+A: Add a to-do item
+R: Replace a to-do item
+D: Delete a to-do item
+
+>> """)
+    if response.lower() == 'p':
         
         count = 1
         for todo in todos:
             print("%d. %s" % (count, todo))
             count += 1
             
-        response = input(f"""Choose an action:
-                        
-    P: Print your to-do list
-    A: Add a to-do item
-    R: Replace a to-do item
-    D: Delete a to-do item
-
-    >> """)
-        if response.lower() == 'p':
-            
-            count = 1
-            for todo in todos:
-                print("%d. %s" % (count, todo))
-                count += 1
-                
-        elif response.lower() == 'a':
-            your_response = input(f"What would you like to add? >> ")
-            todos.append(your_response)
-            
-        elif response.lower() == 'r':
-            your_response = int(input(f"Which item would you like to replace? >> "))
-            your_replacement = input(f"What are you replacing '{your_response}' with? >> ")
-            todos[your_response - 1] = your_replacement
+    elif response.lower() == 'a':
+        your_response = input(f"What would you like to add? >> ")
+        todos.append(your_response)
         
-        elif response.lower() == 'd':
-            your_response = int(input(f"Which item would you like to delete? >> "))
-            del todos[your_response - 1]
-            
-        elif response == '':
-            print("Goodbye.")
-            break
+    elif response.lower() == 'r':
+        your_response = int(input(f"Which item would you like to replace? >> "))
+        your_replacement = input(f"What are you replacing '{your_response}' with? >> ")
+        todos[your_response - 1] = your_replacement
+    
+    elif response.lower() == 'd':
+        your_response = int(input(f"Which item would you like to delete? >> "))
+        del todos[your_response - 1]
         
-        else:
-            print(f"""
-                '{response}' is not a valid entry, please try again.
-                """)
+    elif response == '':
+        print("Goodbye.")
+    else:
+        print(f"""
+            '{response}' is not a valid entry, please try again.
+            """)
+    return(todo_list)
+print(todo_list)                
