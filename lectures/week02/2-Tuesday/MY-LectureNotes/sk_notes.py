@@ -4,6 +4,9 @@
 
 #dictionaryName = {key : value}
 
+from msilib import sequence
+
+
 contacts = {
     "firstName" : "Shannon",
     "phone" : "333-333-3333",
@@ -21,3 +24,5 @@ result = "state" in contacts #is this string in my dictionary? will return True 
 print(result)
 
 contacts["state"] = "Arizona" #this is how you add another key:value. this is also how you change a key:value
+
+# how do we access a sequence inside of another dictionary?
